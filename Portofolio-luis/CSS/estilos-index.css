@@ -5,6 +5,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     background: #141414;
     height: 5rem;
@@ -436,7 +440,7 @@
 /*Footer*/
 
 .footer__contenedor{
-    background-color: #141414;
+    background-color: #363636;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -445,12 +449,25 @@
 }
 
 .footer__logo{
+    text-align: center;
     color: #fff;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    background-color: aqua;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 16px;
+}
+.footer__logo p{
+    display: flex;
+    flex-direction: row;
 }
 
 .footer__links{
@@ -462,31 +479,49 @@
 
 .footer__link--wrapper{
     display: flex;
-    margin-bottom: 100px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer__link--items{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: 16px;
-    text-align: left;
-    width: 160px;
+    text-align: center;
+    width: auto;
     box-sizing: border-box;
 }
 
 .footer__link--items h2{
-    margin-bottom: 16px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .footer__link--items > h2{
     color: #fff;
+    
 }
 
 .footer__link--items a{
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    padding: 10px;
+}
+.footer__link--items img{
+    
+    width: 30px;
+    height: 30px;
+    
+}
+
+/* Social Media */
+
+.social__media--icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .footer__link--items a:hover{
